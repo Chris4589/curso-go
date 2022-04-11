@@ -1,6 +1,9 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"paquete/models"
+)
 
 //strutc son las clases de go
 //serian el molde
@@ -63,4 +66,13 @@ func main() {
 
 	fmt.Println(emp)
 	fmt.Println(emp.getSueldo())
+
+	pe1 := models.Persona2{}
+	pe1.Constructor("asdsd", 26)
+	fmt.Println(pe1.GetEdad())
+	fmt.Println(pe1.GetNombre())
+	fmt.Println(pe1)
+	pe1.SetEdad(21)
+	pe1.SetNombre("chris")
+	fmt.Println(pe1)
 }
